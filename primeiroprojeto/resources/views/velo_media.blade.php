@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Subtração em Laravel</title>
+<title>velocidade média</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
 </head>
 <body> 
 <div class="container">
-<h1>Subtrair de um número em Laravel</h1>
-<form method="post" action="/resposta_subtrair">
+<h1>Calcular velocidade média</h1>
+<form method="post" action="/resposta_velo_media">
     @CSRF
 <div class="mb-3">
-              <label for="valor1" class="form-label">Informe o primeiro valor</label>
-              <input type="number" id="valor1" name="valor1" class="form-control" required="">
+              <label for="valor1" class="form-label">Informe a distancia em Km</label>
+              <input type="number" id="valor1" name="distancia" class="form-control" required="">
             </div><div class="mb-3">
-              <label for="valor2" class="form-label">Informe o segundo valor</label>
-              <input type="number" id="valor2" name="valor2" class="form-control" required="">
+              <label for="valor2" class="form-label">Informe o tempo em horas</label>
+              <input type="number" id="valor2" name="tempo" class="form-control" required="">
             </div>
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
